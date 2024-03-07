@@ -8,7 +8,6 @@ function CountDownTimer(dt)
     var _minute = _second * 60;
     var _hour = _minute * 60;
     var _day = _hour * 24;
-    var timer;
 
     function showRemaining() {
         var now = new Date();
