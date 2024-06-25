@@ -1,4 +1,4 @@
-CountDownTimer('10/04/2024 3:0 PM');
+CountDownTimer('10/04/2024 2:0 PM');
 
 function CountDownTimer(dt)
 {
@@ -24,4 +24,18 @@ function CountDownTimer(dt)
     }
 
     timer = setInterval(showRemaining, 1000);
+}
+
+function loadhis() {
+    document.getElementById("toggle-break-green").src = "assets/graphics/nfl_break_black.png"
+    document.getElementById("toggle-break-top").src="assets/graphics/nfl_break.png"
+    document.getElementById("toggle-break-bottom").src="assets/graphics/nfl_break.png"
+    document.getElementById("toggle-leader").src = "assets/graphics/leaders_black.png"
+}
+
+function loadhers() {
+    document.getElementById("toggle-break-green").src = "assets/graphics/breakline_green.png"
+    document.getElementById("toggle-break-top").src="assets/graphics/breakline.png"
+    document.getElementById("toggle-break-bottom").src="assets/graphics/breakline.png"
+    document.getElementById("toggle-leader").src = "assets/graphics/leaders.png"
 }

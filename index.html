@@ -5,6 +5,18 @@
         <!--<link rel="shortcut icon" type="image/jpg" href="assets/icon.png">-->
     </head>
     <body>
+        <div class="color-panel">
+            <h1 class="color-panel-title font-script">Themes</h1>
+            <div class="theme-toggle">
+                <form>
+                    <input type="radio" name="theme-toggle" id="his" class="radio-theme-toggle" onclick="loadhis()">
+                    <label for="his" class="theme-name font-regular">His</label>
+                    <br/>
+                    <input type="radio" name="theme-toggle" id="hers" class="radio-theme-toggle" onclick="loadhers()" checked>
+                    <label for="hers" class="theme-name font-regular">Hers</label>
+                </form>
+            </div>
+        </div>
         <div class="content">
             <div class="nav-title">
                 <p class="title large font-script">Kason</p>
@@ -66,7 +78,7 @@
             <div class="story">
                 <div class="story-title-block">
                     <p class="story-title font-script">Our Story</p>
-                    <img src="assets/graphics/breakline.png" class="section-title-underline"/>
+                    <img src="assets/graphics/breakline.png" class="section-title-underline" id="toggle-break-top"/>
                 </div>
                 <div class="story-text-block">
                     <p class="story-text font-regular">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Libero id faucibus nisl tincidunt eget nullam non. Scelerisque felis imperdiet proin fermentum leo. Adipiscing tristique risus nec feugiat. Tempor orci eu lobortis elementum nibh tellus molestie nunc non. Neque convallis a cras semper auctor neque vitae tempus. Egestas quis ipsum suspendisse ultrices gravida dictum fusce. Vestibulum mattis ullamcorper velit sed. Adipiscing commodo elit at imperdiet dui accumsan sit amet. Tristique senectus et netus et malesuada.</p>
@@ -84,9 +96,55 @@
                 <div class="schedule-container">
                     <div class="big-day-title-block">
                         <p class="big-day-title font-script">The Big Day</p>
-                        <img src="assets/graphics/breakline_green.png" class="section-title-underline"/>
+                        <img src="assets/graphics/breakline_green.png" class="section-title-underline" id="toggle-break-green"/>
+                        <div class="timeline-container">
+                            <div class="timeline-title-container">
+                                <h1 class="timeline-title font-script">Friday October 4th</h1>
+                            </div>
+                            <div class="timeline-timeline">
+                                <div class="timeline-hours">
+                                    <h1 class="timeline-child font-regular">1:30</h1>
+                                    <h1 class="timeline-child font-regular">1:30</h1>
+                                    <h1 class="timeline-child font-regular">1:30</h1>
+                                    <h1 class="timeline-child font-regular">1:30</h1>
+                                    <h1 class="timeline-child font-regular">1:30</h1>
+                                    <h1 class="timeline-child font-regular">1:30</h1>
+                                    <h1 class="timeline-child font-regular">1:30</h1>
+                                    <h1 class="timeline-child font-regular">1:30</h1>
+                                    <h1 class="timeline-child font-regular">1:30</h1>
+                                </div>
+                                <div class="timeline-divider">
+                                    <center><img class="divider-image" src="assets/graphics/leaders.png" id="toggle-leader"></center>
+                                </div>
+                                <div class="timeline-events">
+                                    <h1 class="timeline-child font-regular">EVENT NAME</h1>
+                                    <h1 class="timeline-child font-regular">EVENT NAME</h1>
+                                    <h1 class="timeline-child font-regular">EVENT NAME</h1>
+                                    <h1 class="timeline-child font-regular">EVENT NAME</h1>
+                                    <h1 class="timeline-child font-regular">EVENT NAME</h1>
+                                    <h1 class="timeline-child font-regular">EVENT NAME</h1>
+                                    <h1 class="timeline-child font-regular">EVENT NAME</h1>
+                                    <h1 class="timeline-child font-regular">EVENT NAME</h1>
+                                    <h1 class="timeline-child font-regular">EVENT NAME</h1>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
+            </div>
+            <div class="directions">
+                <div class="directions-title-block">
+                    <p class="directions-title font-script">Directions</p>
+                    <img src="assets/graphics/breakline.png" class="section-title-underline" id="toggle-break-bottom"/>
+                </div>
+                <br/>
+                <p class="directions-text font-regular">When searching for the venue location on google maps please use: “The Vineyards at Mt Naomi Farms” or 4460 N 1000 E Hyde Park UT</p>
+                <br/>
+                <br/>
+                <center><img class="directions-map" src="assets/graphics/map.png"></center>
+                <br/>
+                <br/>
+                <p class="directions-text font-regular">From Logan, take main street (turns into HWY 89) north then turn right onto 4400 N. Continue to 1000 E and then turn north. You will almost immediately turn onto 4500 N and then arrive at the parking lot. Any individuals in need of assistance unloading or incapable of the short walk from the parking lot to the venue may park in the secondary lot at the rear of the venue.</p>
             </div>
         </div>
         <script src="script.js"></script>
