@@ -16,6 +16,7 @@
     --middle-size: 3em;
     --large: 7em;
     --small: 4em;
+    --base-text: 1.2em;
 }
 
 body {
@@ -329,7 +330,7 @@ body {
 
 .directions {
     width: 100%;
-    background-color: var(--brown);
+    background-color: var(--beige);
     padding-bottom: 50px;
 }
 
@@ -349,7 +350,7 @@ body {
 
 .directions-text {
     color: var(--white);
-    font-size: 1.2em;
+    font-size: var(--base-text);
     width: 80%;
     margin: auto;
 }
@@ -371,4 +372,66 @@ body {
     font-size: var(--header-size);
     margin: 0 0 -15 0;
     padding: 0;
+}
+
+.registry-text {
+    color: var(--green);
+    font-size: var(--base-text);
+    width: 80%;
+    margin: auto;
+}
+
+.registry-qr-block {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.qr-code-container {
+    width: 50%;
+}
+
+.qr-code {
+    width: 40%;
+    height: auto;
+    object-fit: cover;
+}
+
+.qr-text {
+    color: var(--green);
+    font-size: var(--small);
+    margin: auto;
+}
+
+.qr-text-white {
+    color: var(--white);
+    font-size: var(--small);
+    margin: auto;
+}
+
+.rsvp {
+    background-color: var(--brown);
+    margin-top: 50px;
+}
+
+.rsvp-title-block {
+    width: 434px;
+    margin-left: 5%;
+    padding-top: 35px;
+    text-align: center;
+}
+
+.rsvp-title {
+    color: var(--white);
+    font-size: var(--header-size);
+    margin: 0 0 -15 0;
+    padding: 0;
+}
+
+.rsvp-text {
+    color: var(--white);
+    font-size: var(--base-text);
+    width: 80%;
+    margin: auto;
 }
