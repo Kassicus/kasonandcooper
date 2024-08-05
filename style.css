@@ -358,3 +358,17 @@ body {
     width: 80%;
     height: auto;
 }
+
+.registry-title-block {
+    width: 50%;
+    text-align: center;
+    margin-left: 48%;
+    padding-top: 50px;
+}
+
+.registry-title {
+    color: var(--green);
+    font-size: var(--header-size);
+    margin: 0 0 -15 0;
+    padding: 0;
+}
