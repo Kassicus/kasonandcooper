@@ -202,7 +202,7 @@ body {
 
 .story {
     width: 100%;
-    background-color: var(--beige);
+    background-color: var(--brown);
     margin-top: 70px;
     padding-bottom: 70px;
 }
@@ -330,7 +330,7 @@ body {
 
 .directions {
     width: 100%;
-    background-color: var(--beige);
+    background-color: var(--brown);
     padding-bottom: 50px;
 }
 
@@ -434,4 +434,12 @@ body {
     font-size: var(--base-text);
     width: 80%;
     margin: auto;
+}
+
+.todo {
+    color: red;
+    background-color: yellow;
+    font-style: bold;
+    font-size: 24px;
+    font-family: "Inter", sans-serif;
 }
