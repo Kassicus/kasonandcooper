@@ -1,4 +1,4 @@
-CountDownTimer('10/04/2024 2:0 PM');
+CountDownTimer('10/04/2024 4:0 PM');
 
 function CountDownTimer(dt)
 {
