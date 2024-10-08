@@ -11,7 +11,7 @@ function CountDownTimer(dt)
 
     function showRemaining() {
         var now = new Date();
-        var distance = end - now;
+        var distance = now - end;
         var days = Math.floor(distance / _day);
         var hours = Math.floor((distance % _day) / _hour);
         var minutes = Math.floor((distance % _hour) / _minute);
@@ -24,18 +24,4 @@ function CountDownTimer(dt)
     }
 
     timer = setInterval(showRemaining, 1000);
-}
-
-function loadhis() {
-    document.getElementById("toggle-break-green").src = "assets/graphics/nfl_break_black.png"
-    document.getElementById("toggle-break-top").src="assets/graphics/nfl_break.png"
-    document.getElementById("toggle-break-bottom").src="assets/graphics/nfl_break.png"
-    document.getElementById("toggle-leader").src = "assets/graphics/leaders_black.png"
-}
-
-function loadhers() {
-    document.getElementById("toggle-break-green").src = "assets/graphics/breakline_green.png"
-    document.getElementById("toggle-break-top").src="assets/graphics/breakline.png"
-    document.getElementById("toggle-break-bottom").src="assets/graphics/breakline.png"
-    document.getElementById("toggle-leader").src = "assets/graphics/leaders.png"
 }
